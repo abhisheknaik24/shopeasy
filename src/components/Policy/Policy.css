@@ -1,0 +1,40 @@
+.home-policy {
+    padding: 2.4rem;
+}
+
+.home-policy .policy-card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 2.4rem;
+    border: 0.1rem solid var(--border-color);
+}
+
+.home-policy .policy-card .policy-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+    padding: 2.4rem;
+    color: var(--gray-color);
+}
+
+.home-policy .policy-card .policy-details h4 {
+    color: var(--black-color);
+    font-weight: 700;
+}
+
+@media screen and (max-width:76.8rem) {
+    .home-policy {
+        padding: 1rem;
+    }
+
+    .home-policy .policy-card {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 1rem;
+    }
+
+    .home-policy .policy-card .policy-details {
+        flex-direction: column;
+        text-align: center;
+    }
+}

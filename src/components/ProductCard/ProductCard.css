@@ -1,0 +1,153 @@
+.product-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 2.4rem;
+    padding: 2.4rem;
+    border: 0.1rem solid var(--border-color);
+}
+
+.product-card .product-left,
+.product-card .product-right {
+    padding: 2.4rem;
+}
+
+.product-card .product-left .product-img {
+    height: auto;
+    width: 100%;
+}
+
+.product-card .product-right .product-title {
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.product-card .product-right hr {
+    margin: 1rem 0;
+}
+
+.product-card .product-right .product-discount-price {
+    margin-bottom: 0.5rem;
+    color: var(--success-color);
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.product-card .product-right .product-discount-price .product-discount {
+    margin-right: 1rem;
+    color: var(--danger-color);
+    font-weight: 400;
+}
+
+.product-card .product-right .product-price {
+    margin-bottom: 1rem;
+    color: var(--gray-color);
+    font-size: 1.4rem;
+}
+
+.product-card .product-right .product-taxes {
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.product-card .product-right .btn-add-to-cart {
+    margin: 1rem 0;
+    padding: 1rem 2.4rem;
+    color: var(--black-color);
+    background-color: var(--warning-color);
+    font-size: 1.6rem;
+    font-weight: 400;
+    border: 0.1rem solid var(--border-color);
+    border-radius: 10rem;
+}
+
+.product-card .product-right .btn-add-to-cart:hover {
+    transform: scale(1.05);
+}
+
+.product-card .product-right .product-offers,
+.product-card .product-right .product-policies,
+.product-card .product-right .product-features {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.product-card .product-right .offers-cards,
+.product-card .product-right .policies-cards {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.product-card .product-right .offers-cards::-webkit-scrollbar,
+.product-card .product-right .policies-cards::-webkit-scrollbar {
+    height: 0.75rem;
+    border-radius: 50%;
+}
+
+.product-card .product-right .offers-cards::-webkit-scrollbar-track,
+.product-card .product-right .policies-cards::-webkit-scrollbar-track {
+    background-color: var(--light-color);
+    border-radius: 1rem;
+}
+
+.product-card .product-right .offers-cards::-webkit-scrollbar-thumb,
+.product-card .product-right .policies-cards::-webkit-scrollbar-thumb {
+    background-color: var(--secondary-color);
+    border-radius: 1rem;
+}
+
+.product-card .product-right .offers-cards .offers-card,
+.product-card .product-right .policies-cards .policies-card {
+    padding: 1rem;
+    border: 0.1rem solid var(--border-color);
+    border-radius: 1rem;
+}
+
+.product-card .product-right .offers-cards .offers-card .product-offer,
+.product-card .product-right .policies-cards .policies-card .product-policy {
+    text-transform: capitalize;
+}
+
+.product-card .product-right .product-specs table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 1rem;
+}
+
+.product-card .product-right .product-specs table .specs-key {
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.product-card .product-right .product-specs table .specs-value {
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.product-card .product-right .product-features-links {
+    padding: 1rem 0;
+}
+
+.product-card .product-right .product-features-links li {
+    margin-bottom: 1rem;
+    list-style: disc;
+    list-style-position: inside;
+    text-transform: capitalize;
+}
+
+@media screen and (max-width:76.8rem) {
+    .product-card {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .product-card .product-left,
+    .product-card .product-right {
+        padding: 0;
+    }
+}

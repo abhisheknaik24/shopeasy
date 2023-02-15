@@ -1,0 +1,26 @@
+.footer {
+    padding: 5rem 2.4rem;
+    background-color: var(--light-color);
+}
+
+.footer .footer-logo {
+    height: 5rem;
+}
+
+.footer .footer-copyright {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--gray-color);
+    margin-top: 2.4rem;
+}
+
+.footer .footer-copyright .footer-heart {
+    color: var(--danger-color);
+}
+
+@media screen and (max-width:76.8rem) {
+    .footer .footer-logo {
+        height: 4rem;
+    }
+}

@@ -1,0 +1,83 @@
+.sign-in-auth-section {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    padding: 5rem 0;
+    min-height: 90vh;
+    background-color: var(--secondary-color);
+}
+
+.sign-in-auth-section .sign-in-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+    background-color: var(--white-color);
+    width: 50rem;
+    border: 0.1rem solid var(--secondary-color);
+    border-radius: 0.5rem;
+}
+
+.sign-in-auth-section .sign-in-card form {
+    width: 100%;
+}
+
+.sign-in-auth-section .sign-in-card .auth-control-input {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    margin-bottom: 2rem;
+}
+
+.sign-in-auth-section .sign-in-card .auth-control-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.sign-in-auth-section .sign-in-card .auth-control-input .auth-label {
+    margin-bottom: 0.1rem;
+    color: var(--dark-color);
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.sign-in-auth-section .sign-in-card .auth-control-input .auth-input {
+    margin-top: 0.5rem;
+    padding: 1rem 2rem;
+    color: var(--dark-color);
+    font-size: 1.6rem;
+    font-weight: 500;
+    width: 100%;
+    border: 0.1rem solid var(--border-color);
+    border-radius: 0.5rem;
+    outline: none;
+}
+
+.sign-in-auth-section .sign-in-card .auth-control-input .auth-input:focus {
+    border: 0.1rem solid var(--primary-color);
+}
+
+.sign-in-auth-section .sign-in-card .auth-control-btn .auth-btn {
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    background-color: var(--white-color);
+    border: 0.1rem solid var(--primary-color);
+    border-radius: 0.5rem;
+}
+
+.sign-in-auth-section .sign-in-card .auth-control-btn .auth-btn:hover {
+    transform: scale(1.05);
+}
+
+@media screen and (max-width:76.8rem) {
+    .sign-in-auth-section .sign-in-card {
+        margin: 1rem;
+        padding: 2.4rem;
+    }
+}

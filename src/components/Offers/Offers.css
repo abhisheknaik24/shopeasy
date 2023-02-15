@@ -1,0 +1,24 @@
+.offers-images {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.offers-images img:nth-child(2) {
+    grid-column: 2 / span 2;
+}
+
+.offers-images img {
+    height: 30rem;
+    width: 100%;
+}
+
+@media screen and (max-width:76.8rem) {
+    .offers-images {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .offers-images img:nth-child(2) {
+        grid-column: 1;
+    }
+}

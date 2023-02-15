@@ -1,0 +1,53 @@
+.checkout-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.checkout-table thead tr th,
+.checkout-table tbody tr td {
+    padding: 1rem 0;
+    color: var(--gray-color);
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-align: start;
+    vertical-align: middle;
+    border-bottom: 0.1rem solid var(--border-color);
+}
+
+.checkout-table .product-checkout-info {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+}
+
+.checkout-table .product-checkout-info .product-checkout-img {
+    height: 10rem;
+}
+
+.checkout-table .product-checkout-info .product-checkout-title {
+    color: var(--dark-color);
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.checkout-table .product-checkout-quantity {
+    font-weight: 600;
+}
+
+.checkout-table .product-checkout-price {
+    color: var(--success-color);
+    font-weight: 600;
+}
+
+@media screen and (max-width:76.8rem) {
+    .checkout-table .product-checkout-info {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .checkout-table .product-checkout-info .product-checkout-img {
+        height: 5rem;
+    }
+}
